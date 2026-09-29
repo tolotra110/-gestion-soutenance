@@ -1,0 +1,56 @@
+:root {
+  --navy: #1a1533;
+  --navy-soft: #251e46;
+  --navy-softer: #322a5c;
+  --sky: #96ccfb;
+  --sky-deep: #6fb3f2;
+  --paper: #fbfcfe;
+  --paper-tint: #eef6fe;
+  --ink-muted: #6b6785;
+  --line: #dfe8f5;
+  --danger: #e0577d;
+
+  --font-display: 'Poppins', 'Montserrat', sans-serif;
+  --font-body: 'Montserrat', 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--navy);
+  background: var(--navy);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--sky-deep);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
